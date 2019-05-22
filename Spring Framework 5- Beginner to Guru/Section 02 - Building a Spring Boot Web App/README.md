@@ -69,4 +69,4 @@
 
 <a href="https://www.youtube.com/watch?v=w3jLJU7DT5E">What is GitHub</a>
 
-<a href="https://www.youtube.com/watch?v=HwrPhOp6-aM&list=PL0lo9MOBetEHhfG9vJzVCTiDYcbhAiEqL">What is GitHub</a>
+<a href="https://www.youtube.com/watch?v=HwrPhOp6-aM&list=PL0lo9MOBetEHhfG9vJzVCTiDYcbhAiEqL">Training • GitHub and Git Foundations</a>
