@@ -70,3 +70,41 @@
 <a href="https://www.youtube.com/watch?v=w3jLJU7DT5E">What is GitHub</a>
 
 <a href="https://www.youtube.com/watch?v=HwrPhOp6-aM&list=PL0lo9MOBetEHhfG9vJzVCTiDYcbhAiEqL">Training • GitHub and Git Foundations</a>
+
+<h3>Spring Data JPA Repositories</h3>
+
+* Spring Data Repositories
+    * Provides an Implementation of the Repository Pattern
+    * Concept is originally from Eric Evans'book Domain Driven Design
+    * Repository has methods for retrieving domain objects should delegate to a specialized Repository object such that alternative storage implementations may be interchanged
+
+    * This is important. It allows you to easily substitue the persistence layer
+    *  i.e going from SQL to NoSQL
+
+* Spring Data JPA
+    * Is part of a larger family of Spring Data projects
+    * Uses Hibernate for persistence to supported RBDS systems.
+    * Spring Data JPA provides the implementation at run time
+    * No SQL Required
+
+
+* What's the difference between JpaRepository, PagingAndSortingRepository and CrudRepository
+    * JpaRepository extends PagingAndSortingRepository which in turn extends CrudRepository.
+
+    * Their main functions are:
+    * CrudRepository mainly provides CRUD functions.
+    * PagingAndSortingRepository provides methods to do pagination and sorting records.
+    * JpaRepository provides some JPA-related methods such as flushing the persistence context and deleting records in a batch.
+    * Because of the inheritance mentioned above,  JpaRepository will have all the functions of CrudRepository and PagingAndSortingRepository. So if you don't need the repository to have the functions provided by JpaRepository and PagingAndSortingRepository , use CrudRepository.
+    
+* h2
+* Make sure JDBC URL is jdbc:h2:mem:testdb
+
+<h2>Assignment - Add Publisher Entity<h2>
+
+* Assignment - Publisher Entity
+    * Create a new entity 'Publisher', with name and address attributes
+    * Remove publisher string from Book entity. Add Publisher use a @OneToOne relationship
+    * Add Publisher repository
+    * Modify DevBootstrap to populate publisher / book entity
+    * Inspect DB in H2 Console

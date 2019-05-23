@@ -30,11 +30,10 @@ public class Book {
     public Book() {
     }
 
-    public Book(String title, String isbn, String publisher, Set<Author> authors) {
+    public Book(String title, String isbn, String publisher) {
         this.title = title;
         this.isbn = isbn;
         this.publisher = publisher;
-        this.authors = authors;
     }
 
     public Long getId() {
