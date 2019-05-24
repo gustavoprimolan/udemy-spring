@@ -108,3 +108,77 @@
     * Add Publisher repository
     * Modify DevBootstrap to populate publisher / book entity
     * Inspect DB in H2 Console
+
+
+<h2>Introduction to Spring MVC</h2>
+
+* Spring MVC - Spring Framework's Web Module
+* Model called MVC
+
+* What is MVC?
+    * MVC is a common design pattern for GUI and Web Applications
+    * M = Model
+    * V = View
+    * C = Controller
+    
+<img src="imgs/01.png"/>
+
+<img src="imgs/02.png"/>
+
+
+<h2>Configuring Spring MVC Controllers</h2>
+
+* Spring Controllers
+        * Annotate Controller Class with @ Controller
+            * This will register the class as a Spring Bean and as a Controller in Spring MVC
+        * To map methods to http request paths use @RequestMapping
+        
+<h2>Introducing Thymeleaf</h2>
+
+* Thymeleaf is a Java template engine
+* First stable release in July 2011
+* Rapidly gaining popularity in the Spring Community
+* Thymeleaf is a natural template engine
+    * Natural meaning you can view templates in your browser
+    
+
+* Assignment: Display List of Authors
+    * Create Author Controller
+    * Autowire by constructor Author Repository into Controller
+    * Create method to bind list of authors to model
+    * Map path /authors to controller method
+    * Create Thymeleaf template to display authors
+
+<h2>Spring Framework Petclinic</h2>
+
+* Spring Petclinic
+    * Sample application designed to show how the Spring application frameworks can be used to build simple, but powerful database-oriented applications.
+    * Demonstrate the use of Spring's core functionality:
+        * JavaBeans based application configuration using Inversion of Control (IoC)
+        * Model View Controller (MVC) web Presentation Layer
+        * Practical database access through JDBC, Java Persistence API (JPA) or Spring Data JPA
+        * Application monitoring based on JMX
+        * Declarative Transactional Management using AOP
+        * Data Validation that supports but is not dependent on the Presentation Layer
+    
+    <a href="https://github.com/spring-petclinic" target="_blank">Spring Petclinic</a>
+
+
+<h2>Intro to SFG Version of Spring PetClinic Application</h2>
+
+* Opinionated Design
+    * Opinitonated - There is one way of doing things
+    * Un-Opinionated - You are open to doing things anyway you like
+    * Spring Boot - Brings a number of 'Opinionated' default configurations
+        * Thus using Spring Boot is following an opinionated design
+        
+* Opinionated Development
+    * The SFG Pet Clinic will also be opinionated software development
+        * ie - The opinion of John Thompson
+        * Will show you best practices in software design
+            * OOP / SOLID
+            * TDD
+            * Naming Conventions
+            * Software Development life cycle
+            
+
